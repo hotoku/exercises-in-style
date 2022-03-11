@@ -48,5 +48,5 @@ for n in range(1, 101):
         parents.append(Fizz)
     if n % 5 == 0:
         parents.append(Buzz)
-    m = type("temp", tuple(parents), {})(n)
+    m = type(f"Value{n}", tuple(parents), {})(n)
     myprint(m)
